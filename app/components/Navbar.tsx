@@ -32,16 +32,19 @@ const Navbar = () => {
             <Image src="/images/logo.jpg" height={139} width={139} alt="Logo" />
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <Link href="/donate">
             <button
               type="button"
-              className="text-black hidden lg:flex bg-orange transition-colors duration-500 hover:bg-white hover:border hover:bg-animate-bounce font-medium rounded-lg text-sm px-8 py-4 text-center"
+              className="text-black hidden lg:flex bg-orange transition-colors duration-500 hover:bg-white hover:border hover:bg-animate-bounce font-medium rounded-lg text-[16px] px-7 py-4 text-center"
             >
               Donate
             </button>
+            </Link>
+           
 
             <button
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100"
               aria-controls="navbar-sticky"
               aria-expanded={isMenuOpen}
               onClick={toggleMenu}
