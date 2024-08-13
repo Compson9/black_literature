@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main className={`${poppins.className} font-aloja`}>{children}</main>
+        <main className={`${poppins.className}  font-aloja`}>{children}</main>
       </body>
     </html>
   );
