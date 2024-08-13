@@ -75,14 +75,14 @@ const Navbar = () => {
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
               <Link
                 href="/about"
-                className="block py-2 px-3 text-gray-900 rounded md:hover:text-gray-600"
+                className="block py-2 px-3 font-aloja text-gray-900 rounded md:hover:text-gray-600"
                 onClick={() => setMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/ourservice"
-                className="block py-2 px-3 text-gray-900 rounded md:hover:text-gray-600"
+                className="block py-2 font-well px-3 font-aloja text-gray-900 rounded md:hover:text-gray-600"
                 onClick={() => setMenuOpen(false)}
               >
                 Our service
@@ -90,7 +90,7 @@ const Navbar = () => {
               <div className="relative">
                 <button
                   onClick={toggleDropdown}
-                  className="flex items-center py-2 px-3 text-gray-900 rounded md:hover:text-gray-600"
+                  className="flex items-center py-2 px-3 font-aloja text-gray-900 rounded md:hover:text-gray-600"
                 >
                   Our Store
                   {isDropdownOpen ? (
@@ -104,7 +104,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/ourstore/personal"
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                        className="block px-4 py-2  text-gray-800 hover:bg-gray-100"
                         onClick={() => {
                           closeDropdown();
                           setMenuOpen(false);

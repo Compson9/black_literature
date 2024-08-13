@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* globals.css */
+
+@font-face {
+    font-family: 'Aloja';
+    src: url('/fonts/Aloja-Regular.otf') format('otf'),
+         url('/fonts/Aloja-Regular.otf') format('otf');
+    font-weight: bolder;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Wellston';
+    src: url('/fonts/Wellston-Bold.woff') format('woff'),
+         url('/fonts/Wellston-Medium.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Aloja', sans-serif; /* Default font for the body */
+  }
+  
