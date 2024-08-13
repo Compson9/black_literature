@@ -33,14 +33,13 @@ const Navbar = () => {
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <Link href="/donate">
-            <button
-              type="button"
-              className="text-black hidden lg:flex bg-orange transition-colors duration-500 hover:bg-white hover:border hover:bg-animate-bounce font-medium rounded-lg text-[16px] px-7 py-4 text-center"
-            >
-              Donate
-            </button>
+              <button
+                type="button"
+                className="text-black hidden lg:flex bg-orange transition-colors duration-500 hover:bg-white hover:border hover:bg-animate-bounce font-medium rounded-lg text-[16px] px-7 py-4 text-center"
+              >
+                Donate
+              </button>
             </Link>
-           
 
             <button
               type="button"
@@ -68,11 +67,11 @@ const Navbar = () => {
             </button>
           </div>
           <div
-            className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? "block" : "hidden"
+            className={`fixed top-16 left-0 w-full h-[calc(100vh-4rem)] bg-white md:static md:h-auto md:w-auto md:flex md:items-center justify-between md:justify-start z-10 transition-all duration-300 ease-in-out ${isMenuOpen ? "block" : "hidden"
               }`}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+            <ul className="flex flex-col p-4 md:p-0 font-medium border-gray-100 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-white md:bg-transparent">
               <Link
                 href="/about"
                 className="block py-2 px-3 font-aloja text-gray-900 rounded md:hover:text-gray-600"
@@ -82,10 +81,10 @@ const Navbar = () => {
               </Link>
               <Link
                 href="/ourservice"
-                className="block py-2 font-well px-3 font-aloja text-gray-900 rounded md:hover:text-gray-600"
+                className="block py-2 px-3 font-aloja text-gray-900 rounded md:hover:text-gray-600"
                 onClick={() => setMenuOpen(false)}
               >
-                Our service
+                Our Service
               </Link>
               <div className="relative">
                 <button
@@ -104,7 +103,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/ourstore/personal"
-                        className="block px-4 py-2  text-gray-800 hover:bg-gray-100"
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                         onClick={() => {
                           closeDropdown();
                           setMenuOpen(false);
